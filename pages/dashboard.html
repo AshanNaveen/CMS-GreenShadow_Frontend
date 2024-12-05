@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field Guardian Dashboard</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Logo Section -->
+        <div class="logo-section">
+          <div class="logo-container">
+            <div class="logo-box">
+              <img
+                src="/assets/images/logo.png"
+                alt="fieldguardian-logo-green"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+          <button
+            class="nav-item active"
+            data-page="\components\pages\section\dashboardSection.html"
+          >
+            Dashboard
+          </button>
+          <button
+            class="nav-item"
+            data-page="\components\pages\section\staffSection.html"
+          >
+            Staff
+          </button>
+          <button
+            class="nav-item"
+            data-page="\components\pages\section\fieldSection.html"
+          >
+            Field
+          </button>
+          <button
+            class="nav-item"
+            data-page="\components\pages\section\cropSection.html"
+          >
+            Crop
+          </button>
+          <button
+            class="nav-item"
+            data-page="\components\pages\section\equipmentSection.html"
+          >
+            Equipment
+          </button>
+          <button
+            class="nav-item"
+            data-page="\components\pages\section\vehicleSection.html"
+          >
+            Vehicle
+          </button>
+          <button
+            class="nav-item"
+            data-page="\components\pages\section\monitoringLogSection.html"
+          >
+            Monitoring Log
+          </button>
+        </nav>
+
+        <!-- User Profile Section -->
+        <div class="user-profile">
+          <div class="profile-actions">
+            <button class="action-btn" id="settingsBtn">
+              <img src="/assets/icons/settings_svgrepo.com.svg" alt="settings-icon" />
+            </button>
+            <button class="action-btn" id="logoutBtn">
+              <img src="/assets/icons/logout_svgrepo.com.svg" alt="logout-icon" />
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <div class="header-welcome">
+            <h1>Welcome to CMS of Green Shadow PVT Limited</h1>
+
+          </div>
+          <div class="header-profile" id="headerProfileBtn">
+            <img
+                    src="/assets/icons/user_svgrepo.com%20(2).svg"
+                    alt="profile-image"
+            />
+          </div>
+        </header>
+        <!-- Content Frame -->
+        <div class="content-frame">
+          <iframe
+            id="contentFrame"
+            src="/components/pages/section/dashboardSection.html"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </main>
+    </div>
+
+    <script src="/assets/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="module" src="/controllers/HomePageController.js"></script>
+  </body>
+</html>
