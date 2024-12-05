@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Green Shadow</title>
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/assets/css/styles.css" rel="stylesheet"/>
+    <link href="/assets/css/signInPage.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid main-container">
+    <div class="auth-container">
+        <div class="row g-0">
+            <!-- Left Side - Sign In Form -->
+            <div class="col-md-6 form-side">
+                <div class="form-content">
+
+                    <p class="signin-heading">
+                        Welcome Back
+                    </p>
+                    <p class="signin-subtitle">
+                        Log in to Your Account
+                    </p>
+
+                    <form class="login-form">
+                        <div class="form-group">
+                            <input
+                                    class="form-control"
+                                    id="email"
+                                    placeholder="Email"
+                                    required
+                                    type="email"
+                            />
+                        </div>
+                        <div class="form-group password-group">
+                            <input
+                                    class="form-control"
+                                    id="password"
+                                    placeholder="Password"
+                                    required
+                                    type="password"
+                            />
+                            <span class="password-toggle">
+                    <img
+                            alt="Toggle password"
+                            src="/assets/icons/eye_svgrepo.com%20(2).svg"
+                    />
+                  </span>
+                        </div>
+                        <div class="text-end">
+                            <a
+                                    class="forgot-password"
+                                    href=""
+                                    id="forgot-password-link"
+                            >Forgot password?</a
+                            >
+                        </div>
+                        <button class="btn btn-signin" type="submit">SIGN IN</button>
+                    </form>
+
+                    <div class="signup-prompt">
+                        <span>Don't have an account?</span>
+                        <a class="signup-link" href="/pages/signUpPage.html"
+                        >Sign Up Now</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Welcome Banner -->
+            <div class="col-md-6 banner-side">
+                <div class="banner-content">
+                    <img
+                            alt="FieldGuardian"
+                            class="logo-white"
+                            src="/assets/images/SignInCover.png"
+                            style="opacity: 0.0"
+                    />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/jquery/jquery-3.7.1.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/controllers/SignInPageController.js" type="module"></script>
+</body>
+</html>
